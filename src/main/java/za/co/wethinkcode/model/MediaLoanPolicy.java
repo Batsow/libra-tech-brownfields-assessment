@@ -15,24 +15,24 @@ public class MediaLoanPolicy implements LoanPolicy {
     @Override
     public int loanPeriodDays() {
         // TODO
-        return 0;
+        return LOAN_PERIOD_DAYS;
     }
 
     @Override
     public double dailyFineRate() {
         // TODO
-        return 0.0;
+        return DAILY_FINE_RATE;
     }
 
     @Override
     public boolean isBorrowable() {
         // TODO
-        return false;
+        return true;
     }
 
     @Override
     public String policyName() {
         // TODO
-        return null;
+        return "Media";
     }
 }

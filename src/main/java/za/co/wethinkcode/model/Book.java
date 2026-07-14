@@ -82,14 +82,19 @@ public class Book {
     public Book(String isbn, String title, String author, LoanPolicy loanPolicy) {
         this(isbn, title, author);
         // TODO: store loanPolicy
+        this.loanPolicy = loanPolicy;
     }
 
     public LoanPolicy loanPolicy() {
-        // TODO: return loanPolicy, defaulting to StandardLoanPolicy when unset
-        return null;
+        // TODO: return loanPolicy, defaulting to StandardLoanPolicy when unset'
+        if (loanPolicy == null){
+            return new StandardLoanPolicy();
+        }
+        return loanPolicy;
     }
 
     public void setLoanPolicy(LoanPolicy loanPolicy) {
         // TODO: implement
+        this.loanPolicy = loanPolicy;
     }
 }

@@ -15,24 +15,24 @@ public class ReferenceLoanPolicy implements LoanPolicy {
     @Override
     public int loanPeriodDays() {
         // TODO
-        return -1;
+        return LOAN_PERIOD_DAYS;
     }
 
     @Override
     public double dailyFineRate() {
         // TODO
-        return -1.0;
+        return DAILY_FINE_RATE;
     }
 
     @Override
     public boolean isBorrowable() {
         // TODO
-        return true;
+        return false;
     }
 
     @Override
     public String policyName() {
         // TODO
-        return null;
+        return "Reference";
     }
 }
